@@ -1,0 +1,644 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+  color: #0E0E0E
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+    
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0
+  box-sizing: border-box
+  font-family: $default-font
+  width: 100%
+  background: transparent
+  color: #000000
+  font-size: 18px
+  &::placeholder
+    color: #000000
+
+label
+  width: 100%
+  display: block
+  margin: 0 0 23px
+
+button
+  transition: .3s ease
+  outline: none
+  padding: 0
+  margin: 0
+  border: none
+  cursor: pointer
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.container
+  max-width: 1530px
+  width: 100%
+  padding: 0 15px
+  display: flex
+  flex-wrap: wrap
+  margin: 0 auto
+  position: relative
+
+h1
+  font-size: 48px
+  font-weight: 600
+  width: 100%
+  margin: 0 0 32px
+
+h2
+  width: 100%
+  font-size: 34px
+  font-weight: 600
+  margin: 0 0 58px
+
+h3
+  font-size: 28px
+  font-weight: 600
+  width: 100%
+
+.box-text
+  font-size: 18px
+
+.wrapper-row
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: space-between
+  width: 100%
+
+.w-100
+  width: 100%
+
+.row
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 -15px
+
+.col-3
+  width: 33.33333%
+  padding: 0 15px
+
+.mb-30
+  margin-bottom: 30px
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  outline: none
+  box-shadow: none
+  border: none
+    radius: 4px
+  padding: 20px 50px
+  width: fit-content
+  font-weight: bold
+  font-size: 16px
+
+.btn-accent
+  background: $accent
+  color: #fff
+  border: 1px solid $accent
+  &:hover
+    background: #fff
+    color: #0E0E0E
+
+.btn-border
+  border: 1px solid $accent
+  background: #fff
+  color: #0E0E0E
+  font-weight: 500
+  padding: 14px 20px
+  &:hover
+    background: $accent
+    color: #fff
+
+//home
+.home
+  padding: 76px 0 8px
+  .container
+    align-items: flex-end
+    justify-content: space-between
+  .btn
+    margin: 40px 0 0
+
+
+.home-img
+  max-width: 632px
+  width: 100%
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 85px 0 0
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    background: url("../img/bg-img.png") no-repeat center
+      size: 100%
+    width: 522px
+    height: 360px
+    top: -32px
+    right: -24px
+    z-index: -1
+
+.list-check
+  li
+    padding: 0 0 0 27px
+    margin: 0 0 15px
+    position: relative
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      width: 15px
+      height: 13px
+      background: url("../img/check.svg") no-repeat center
+        size: 100%
+      left: 0
+      top: 5px
+
+.home-content
+  max-width: 550px
+  width: 100%
+  margin: 0 0 57px
+  position: relative
+  z-index: 1
+  ul
+    font-size: 20px
+
+//advantages
+.advantages
+  .box-text
+    max-width: 870px
+    width: 100%
+    margin: 0 0 59px
+
+.advantages-box
+  padding: 40px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 100%
+  border: 1px solid #E6E8E0
+    radius: 12px
+  color: #000
+  line-height: 140%
+  .box-text
+    margin: 0
+    font-size: 16px
+    max-width: 245px
+    width: calc(100% - 87px)
+  &__icon
+    width: 87px
+    height: 85px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    margin: 0 10px 0 0
+
+//advantages-acquiring
+.advantages-acquiring
+  padding: 70px 0 50px
+
+.advantages-acquiring-box
+  width: 100%
+  border-radius: 12px
+  height: 100%
+  padding: 44px 45px 45px 40px
+  h3
+    font-size: 22px
+    font-weight: 600
+  &__title
+    width: 100%
+    display: flex
+    align-items: center
+    margin: 0 0 20px
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 70px
+    height: 70px
+  h3
+    width: calc(100% - 70px)
+    padding: 0 0 0 29px
+  ul
+    font-size: 16px
+    li
+      margin: 0 0 30px
+
+.bg-orange-light
+  background: linear-gradient(0deg, #FFF7EF, #FFF7EF)
+
+.bg-violet-light
+  background: linear-gradient(0deg, #F7F7FF, #F7F7FF), linear-gradient(0deg, #FFF7EF, #FFF7EF)
+
+.bg-green-light
+  background: linear-gradient(0deg, #F7FFEF, #F7FFEF)
+
+//rates
+.rates
+  background: linear-gradient(0deg, #F4F4F4, #F4F4F4), linear-gradient(0deg, #FFF7F7, #FFF7F7)
+  position: relative
+  .container
+    padding: 85px 15px 55px
+    justify-content: space-between
+    align-items: stretch
+
+.rates-box
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF)
+  border-radius: 12px
+  padding: 44px 54px 41px 41px
+  margin: 0 0 30px
+  max-width: 595px
+  width: 100%
+  h3
+    margin: 0 0 29px
+
+.rates-img
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translate(-50%,0)
+  max-width: 447px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+//acquiring-percent
+.acquiring-percent
+  padding: 75px 0 78px
+
+.acquiring-percent-wrap
+  width: 100%
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #F8FAF0, #F8FAF0)
+  border: 1px solid #E6E8E0
+    radius: 12px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 11px 122px 7px 67px
+
+.acquiring-percent__content
+  max-width: 560px
+  width: 100%
+  h3
+    margin: 0 0 19px
+  .btn
+    margin: 47px 0 0
+
+.acquiring-percent__img
+  display: flex
+  align-items: center
+  justify-content: center
+
+.bg-grey
+  background: linear-gradient(0deg, #F4F4F4, #F4F4F4), linear-gradient(0deg, #FFF7F7, #FFF7F7)
+
+//instruction
+.instruction
+  padding: 66px 0 76px
+  h3
+    margin: 0 0 87px
+
+.stage-connection
+  width: 25%
+  position: relative
+  margin: 0 0 65px
+  &:before
+    content: ''
+    position: absolute
+    width: 247px
+    height: 0
+    border: 1px dashed #959595
+    left: 100px
+    top: 37px
+
+  &:last-child
+    width: 15%
+    &:before
+      display: none
+  &__icon
+    margin: 0 0 23px
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    height: 73px
+    img
+      max-height: 100%
+  &__num
+    margin: 0 0 24px
+    width: 72px
+    height: 72px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    border: 1px solid $accent
+      radius: 50%
+    font-size: 26px
+    font-weight: 500
+  p
+    max-width: 254px
+    width: 100%
+    line-height: 135%
+
+//acquiring-terminal
+.acquiring-terminal
+  background: #fff
+  width: 100%
+  border-radius: 12px
+  padding: 61px 39px 0 61px
+  h3
+    margin: 0 0 23px
+  .stage-connection
+    margin: 0 0 40px
+    &:last-child
+      width: 20%
+  .box-text
+    margin: 0 0 53px
+
+//merchant-acquiring
+.merchant-acquiring
+  padding: 78px 0 102px
+  &-wrap
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #F8FAF0, #F8FAF0)
+    border: 1px solid $accent
+      radius: 12px
+    width: 100%
+    padding: 80px 40px 70px
+    text-align: center
+  .wrapper-row
+    max-width: 741px
+    width: 100%
+    margin: 0 auto
+  h2
+    font-size: 28px
+    text-align: center
+    margin: 0 auto 61px
+
+.merchant-acquiring-box
+  text-align: center
+  .btn
+    margin: 0 auto
+    padding: 21px 45px
+  h4
+    font-size: 23px
+    font-weight: 500
+    margin: 0 auto 33px
+
+//question
+.question
+  padding: 0 0 78px
+  h2
+    font-size: 28px
+    margin: 0 0 70px
+
+.question-icon
+  max-width: 281px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.question-panel
+  width: calc(100% - 281px)
+  max-width: 1062px
+
+.panel_heading
+  border: 1px solid #E9E9E9
+  background: #F9F9F9
+  width: 100%
+  padding: 24px 30px
+  margin: 0 0 -1px
+  &:first-child
+    border-radius: 12px 12px 0px 0px
+  &:last-child
+    border-radius: 0px 0px 12px 12px
+
+.block_title
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-size: 18px
+  font-weight: 600
+  cursor: pointer
+  &:after
+    content: '+'
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #7A7A7A
+    font-size: 25px
+    font-weight: 500
+    line-height: 130%
+    transition: .3s ease
+    
+.block_hover
+  width: 100%
+  line-height: 135%
+  padding: 15px 0 0
+  display: none
+  
+.in
+  background: #fff
+  border: 2px solid #2AA549
+  margin: 0
+  .block_title
+    &:after
+      content: '-'
+
+.modal__div
+  position: fixed
+  max-width: 732px
+  width: 100%
+  height: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+
+.modal__close
+  position: absolute
+  right: 10px
+  top: 10px
+
+.modal__wrapper
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #F8FAF0, #F8FAF0)
+  border-radius: 12px
+  width: 100%
+  height: auto
+  overflow: auto
+  margin: 50px auto
+  padding: 54px 50px
+  box-sizing: border-box
+  position: relative
+  h2
+    margin: 0 0 18px
+  .box-text
+    font-size: 16px
+
+
+.overlay
+  z-index: 100
+  position: fixed
+  background-color: #000
+  opacity: 0.8
+  -moz-opacity: 0.8
+  filter: alpha(opacity = 80)
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none
+
+.agreement
+  font-size: 13px
+  margin: 0 0 20px
+
+.form
+  margin: 19px 0 0
+  label
+    background: #F3F3F3
+    border-radius: 3px
+    padding: 11px 20px 18px
+  input
+    border: none
+
+
+.input-title
+  width: 100%
+  display: block
+  margin: 0 0 3px
+  color: #7A7A7A
+  font-size: 13px
+
+.btn-group
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  .btn
+    padding: 10px
+    max-width: 200px
+    width: 100%
+    height: 66px
+    margin: 17px 25px 0 0
+    &:last-child
+      margin: 17px 0 0
+
+.links-inline
+  display: inline
+  color: #0E0E0E
+
+.text-decoration
+  text-decoration: underline
+
+@import "media"
+// Всегда в конце

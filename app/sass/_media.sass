@@ -1,0 +1,345 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1400px)
+  .stage-connection:before
+    width: 210px
+
+  .question-icon
+    max-width: 140px
+
+  .question-panel
+    width: calc(100% - 140px)
+    padding: 0 40px 0 0
+
+@media only screen and (max-width: 1360px)
+  .home-img
+    max-width: 432px
+    margin: 0
+
+    &:before
+      width: 422px
+      height: 320px
+
+  .home-content
+    margin: 0 0 30px
+
+  .rates-box
+    max-width: 40%
+
+  .acquiring-percent
+    padding: 40px 0
+
+  .acquiring-percent-wrap
+    padding: 10px 40px
+
+  .stage-connection:before
+    width: 200px
+
+  .acquiring-terminal
+    padding: 30px 30px 0
+
+@media only screen and (max-width: 1200px)
+  .home-content
+    max-width: 360px
+    ul
+      font-size: 16px
+
+    .btn
+      margin: 20px 0 0
+
+  h1
+    font-size: 30px
+    margin: 0 0 30px
+
+  .btn
+    padding: 15px 30px
+    font-size: 14px
+
+  .home
+    padding: 40px 0
+    .container
+      align-items: center
+
+  .advantages
+    .box-text
+      margin: 0 0 30px
+
+  .advantages-box
+    padding: 20px
+    font-size: 14px
+    .box-text
+      margin: 0
+      font-size: 14px
+
+  .advantages-box__icon
+    margin: 0
+
+  .advantages-acquiring-box
+    padding: 30px
+    h3
+      font-size: 20px
+      padding: 0 0 0 10px
+
+  .rates-box
+    padding: 30px
+
+  .rates .container
+    padding: 40px 15px
+
+  h3
+    font-size: 24px
+    margin: 0 0 20px
+
+  .acquiring-percent__img
+    max-width: 400px
+
+  .acquiring-percent__content
+    max-width: 450px
+
+  .stage-connection:before
+    width: 140px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .home-img
+    max-width: 320px
+    &:before
+      width: 322px
+      height: 250px
+      right: 0
+      top: -40px
+
+  h2
+    font-size: 30px
+
+  .advantages-acquiring-box
+    ul
+      font-size: 14px
+      li
+        margin: 0 0 20px
+    h3
+      width: calc(100% - 50px)
+      font-size: 18px
+
+  .advantages-acquiring-box__icon
+    width: 50px
+    height: 50px
+
+  .rates-box
+    font-size: 14px
+    max-width: none
+    h3
+      font-size: 18px
+      margin: 0 0 20px
+
+  .rates-img
+    order: 1
+    max-width: 320px
+    position: relative
+    left: 0
+    transform: none
+    bottom: 0
+    margin: 0 auto
+
+  .rates
+    .container
+      padding: 40px 15px 0
+
+  .acquiring-percent__content
+    max-width: none
+    margin: 0 0 30px
+
+  .acquiring-percent__img
+    margin: 0 auto
+    justify-content: center
+
+  .acquiring-percent-wrap
+    padding: 30px
+    text-align: center
+    .btn
+      margin: 30px auto 0
+
+  .stage-connection
+    width: 50%
+    margin: 0 0 30px
+    &:before
+      width: 250px
+    &:nth-child(2)
+      &:before
+        display: none
+    &:last-child
+      width: 50%
+
+  .acquiring-terminal .stage-connection:last-child
+    width: 50%
+
+  .instruction
+    padding: 45px 0 55px
+    h3
+      margin: 0 0 30px
+
+  .merchant-acquiring
+    padding: 40px 0 70px
+
+  .merchant-acquiring-wrap
+    padding: 40px
+
+  .merchant-acquiring-box h4
+    font-size: 20px
+    margin: 0 auto 20px
+
+  .merchant-acquiring h2
+    margin: 0 auto 30px
+
+  .panel_heading
+    padding: 20px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 870px)
+  .col-3
+    width: 50%
+
+@media only screen and (max-width: 768px)
+  .box-text
+    font-size: 16px
+
+  .advantages-acquiring
+    padding: 40px 0
+
+  h2
+    font-size: 26px
+    margin: 0 0 30px
+
+  .stage-connection:before
+    width: 170px
+
+  .stage-connection__icon
+    height: 60px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 700px)
+  .home-content
+    max-width: none
+    width: 100%
+    text-align: center
+    margin: 0 0 40px
+    .btn
+      margin: 30px auto 0
+    ul
+      width: fit-content
+      margin: 0 auto
+      text-align: left
+
+  h1
+    font-size: 26px
+
+  .home-img
+    margin: 0 auto
+
+  .col-3
+    width: 100%
+
+  .advantages-box .box-text
+    max-width: none
+    padding: 0 20px 0 0
+
+  .stage-connection
+    &:before
+      display: none
+
+  .acquiring-terminal .box-text
+    margin: 0 0 30px
+
+  .merchant-acquiring-box
+    width: 100%
+    margin: 0 auto 30px
+    &:last-child
+      margin: 0 auto
+
+  .merchant-acquiring h2
+    font-size: 24px
+
+  .merchant-acquiring-box h4
+    font-size: 18px
+
+  .question-icon
+    display: none
+
+  .question-panel
+    width: 100%
+    padding: 0
+
+  .question
+    padding: 0 0 40px
+    h2
+      margin: 0 0 30px
+      font-size: 24px
+
+  .modal__wrapper
+    padding: 30px
+
+  .modal__close
+    position: absolute
+    right: 20px
+    top: 20px
+    width: 20px
+    height: 20px
+    cursor: pointer
+    &:before, &:after
+      content: ''
+      position: absolute
+      left: 10px
+      top: 0
+      width: 1px
+      height: 100%
+      background: $accent
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(135deg)
+
+@media only screen and (max-width: 576px)
+  .stage-connection
+    width: 100%
+    text-align: center
+    &:last-child
+      width: 100%
+    br
+      display: none
+    p
+      max-width: none
+
+  .stage-connection__icon
+    justify-content: center
+
+  .stage-connection__num
+    margin: 0 auto 20px
+
+  .acquiring-terminal .stage-connection:last-child
+    width: 100%
+
+  .btn-group
+    .btn
+      width: 100%
+      max-width: none
+      height: 50px
+      margin: 20px 0 0
+
+
+
+@media only screen and (max-width: 480px)
+  .advantages-box__icon
+    width: 50px
+    height: 50px
+
+  .advantages .box-text
+    width: calc(100% - 50px)
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /**/
+
