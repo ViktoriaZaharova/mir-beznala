@@ -646,7 +646,7 @@ h3 {
     margin: 0 auto 33px; }
 
 .question {
-  padding: 0 0 78px; }
+  padding: 0 0 50px; }
   .question h2 {
     font-size: 28px;
     margin: 0 0 70px; }
@@ -874,6 +874,16 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.footer {
+  padding: 28px 0; }
+
+.copyright {
+  color: #0E0E0E;
+  font-size: 13px;
+  max-width: 740px;
+  width: 100%;
+  line-height: 135%; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
