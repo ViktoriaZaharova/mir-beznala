@@ -366,6 +366,8 @@ h3
 //acquiring-percent
 .acquiring-percent
   padding: 75px 0 78px
+  h2
+    font-size: 32px
 
 .acquiring-percent-wrap
   width: 100%
@@ -393,6 +395,56 @@ h3
 
 .bg-grey
   background: linear-gradient(0deg, #F4F4F4, #F4F4F4), linear-gradient(0deg, #FFF7F7, #FFF7F7)
+
+.prices-wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 0 40px
+
+.prices-box
+  width: 49%
+  margin: 0 0 40px
+  background: #FFFFFF
+  border: 6px solid rgba(207, 207, 207, 0.3)
+    radius: 12px
+  padding: 47px 40px 48px
+  h3
+    color: #2AA549
+    font-size: 24px
+    font-weight: 600
+    width: 100%
+    margin: 0 0 33px
+  .btn
+    margin: 44px auto 0
+
+.prices-list
+  width: 100%
+  color: #0E0E0E
+  line-height: 135%
+  li
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 20px 0
+    min-height: 80px
+    border-bottom: 1px solid #EFEFEF
+    &:last-child
+      border: none
+    strong
+      display: block
+      font-weight: 600
+
+.prices-list__item
+  text-align: right
+
+.prices-val
+  font-size: 22px
+  font-weight: 600
+  white-space: nowrap
 
 //instruction
 .instruction
@@ -639,6 +691,34 @@ h3
 
 .text-decoration
   text-decoration: underline
+
+//.header
+.header
+  width: 100%
+  padding: 26px 0 0
+  .container
+    align-items: center
+    justify-content: space-between
+
+  .phone
+    display: flex
+    align-items: center
+    color: #000000
+    font-size: 16px
+  .phone-icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 11px 0 0
+    width: 17px
+    min-width: 17px
+
+.logo-my
+  max-width: 171px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
 
 @import "media"
 // Всегда в конце

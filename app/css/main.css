@@ -436,6 +436,8 @@ h3 {
 
 .acquiring-percent {
   padding: 75px 0 78px; }
+  .acquiring-percent h2 {
+    font-size: 32px; }
 
 .acquiring-percent-wrap {
   width: 100%;
@@ -478,6 +480,69 @@ h3 {
 .bg-grey {
   background: -webkit-gradient(linear, left bottom, left top, from(#F4F4F4), to(#F4F4F4)), -webkit-gradient(linear, left bottom, left top, from(#FFF7F7), to(#FFF7F7));
   background: linear-gradient(0deg, #F4F4F4, #F4F4F4), linear-gradient(0deg, #FFF7F7, #FFF7F7); }
+
+.prices-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 40px; }
+
+.prices-box {
+  width: 49%;
+  margin: 0 0 40px;
+  background: #FFFFFF;
+  border: 6px solid rgba(207, 207, 207, 0.3);
+    border-radius: 12px;
+  padding: 47px 40px 48px; }
+  .prices-box h3 {
+    color: #2AA549;
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
+    margin: 0 0 33px; }
+  .prices-box .btn {
+    margin: 44px auto 0; }
+
+.prices-list {
+  width: 100%;
+  color: #0E0E0E;
+  line-height: 135%; }
+  .prices-list li {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px 0;
+    min-height: 80px;
+    border-bottom: 1px solid #EFEFEF; }
+    .prices-list li:last-child {
+      border: none; }
+    .prices-list li strong {
+      display: block;
+      font-weight: 600; }
+
+.prices-list__item {
+  text-align: right; }
+
+.prices-val {
+  font-size: 22px;
+  font-weight: 600;
+  white-space: nowrap; }
 
 .instruction {
   padding: 66px 0 76px; }
@@ -764,6 +829,52 @@ h3 {
 .text-decoration {
   text-decoration: underline; }
 
+.header {
+  width: 100%;
+  padding: 26px 0 0; }
+  .header .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .header .phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #000000;
+    font-size: 16px; }
+  .header .phone-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 11px 0 0;
+    width: 17px;
+    min-width: 17px; }
+
+.logo-my {
+  max-width: 171px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1400px) {
@@ -939,7 +1050,15 @@ h3 {
   .stage-connection:before {
     width: 170px; }
   .stage-connection__icon {
-    height: 60px; } }
+    height: 60px; }
+  .prices-box {
+    width: 100%;
+    padding: 30px; }
+    .prices-box h3 {
+      margin: 0 0 30px;
+      font-size: 20px; }
+    .prices-box .btn {
+      margin: 30px auto 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 700px) {
@@ -1041,8 +1160,6 @@ h3 {
     width: 50px;
     height: 50px; }
   .advantages .box-text {
-    width: calc(100% - 50px); } }
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/ }
+    width: calc(100% - 50px); }
+  .logo-my {
+    max-width: 120px; } }

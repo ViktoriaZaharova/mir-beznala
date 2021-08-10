@@ -28,6 +28,16 @@
 
 <body>
 
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo-my"><img src="img/logo.png" alt=""></a>
+    <a href="tel:8 800 600-67-35" class="phone">
+      <span class="phone-icon"><img src="img/phone.svg" alt=""></span>
+      <span class="phone-text">8 800 600-67-35</span>
+    </a>
+  </div>
+</header>
+
 <main class="home">
   <div class="container">
     <div class="home-content">
@@ -203,20 +213,119 @@
   </div>
 </div>
 
-<div class="acquiring-percent">
+<section class="acquiring-percent">
   <div class="container">
+    <h2>Сколько стоит</h2>
+    <div class="prices-wrapper">
+      <div class="prices-box">
+        <h3>С открытием счета</h3>
+        <ul class="prices-list">
+          <li>
+            <p>Комиссия</p>
+            <div class="prices-list__item">
+              <div class="prices-val">от 1,3%
+                </div>
+              <span>от оборота</span>
+            </div>
+          </li>
+          <li>
+            <strong>Комиссия за пересисление денег на счет</strong>
+            <div class="prices-list__item">
+              <div class="prices-val">0 ₽</div>
+            </div>
+          </li>
+          <li>
+            <p>Быстрое зачисление</p>
+            <div class="prices-list__item">
+              <div class="check-item"><img src="img/check-item.svg" alt=""></div>
+            </div>
+          </li>
+          <li>
+            <p>Стоимость терминала
+              <strong>или бесплатно подключить свой терминал</strong></p>
+            <div class="prices-list__item">
+              <div class="prices-val">14 000 ₽</div>
+              <span>разово</span>
+            </div>
+          </li>
+          <li>
+            <p>Подключение услуги со своим терминалом</p>
+            <div class="prices-list__item">
+              <div class="prices-val">0 ₽</div>
+            </div>
+          </li>
+          <li>
+            <p>Выносная клавиатура</p>
+            <div class="prices-list__item">
+              <div class="prices-val">5 000 ₽ </div>
+            </div>
+          </li>
+        </ul>
+
+        <a href="#" class="btn btn-accent">Подключить</a>
+      </div>
+
+      <div class="prices-box">
+        <h3>Без открытия счета</h3>
+          <ul class="prices-list">
+            <li>
+              <p>Комиссия</p>
+              <div class="prices-list__item">
+                <div class="prices-val">2%
+                </div>
+                <span>от оборота</span>
+              </div>
+            </li>
+            <li>
+              <strong>Комиссия за пересисление денег на счет</strong>
+              <div class="prices-list__item">
+                <div class="prices-val">1,9 %</div>
+              </div>
+            </li>
+            <li>
+              <p>Быстрое зачисление</p>
+              <div class="prices-list__item">
+                <div class="check-item"><img src="img/no-check-item.svg" alt=""></div>
+              </div>
+            </li>
+            <li>
+              <p>Стоимость терминала
+                <strong>или бесплатно подключить свой терминал</strong></p>
+              <div class="prices-list__item">
+                <div class="prices-val">14 000 ₽</div>
+                <span>разово</span>
+              </div>
+            </li>
+            <li>
+              <p>Подключение услуги со своим терминалом</p>
+              <div class="prices-list__item">
+                <div class="prices-val">0 ₽</div>
+              </div>
+            </li>
+            <li>
+              <p>Выносная клавиатура</p>
+              <div class="prices-list__item">
+                <div class="prices-val">5 000 ₽ </div>
+              </div>
+            </li>
+          </ul>
+
+        <a href="#" class="btn btn-accent">Подключить</a>
+      </div>
+    </div>
+
     <div class="acquiring-percent-wrap">
       <div class="acquiring-percent__content">
-        <h3>Эквайринг за 1,3%</h3>
+        <h3>Тарифы для расчетного счета</h3>
         <div class="box-text">
-          <p>На операции по картам Visa - 1.3% на 6 месяцев</p>
+          <p>Счёт, карта, онлайн-операции бесплатно</p>
         </div>
-        <a href="#" class="btn btn-border">Подробнее</a>
+        <a href="#" class="btn btn-border">Посмотреть тарифы</a>
       </div>
       <div class="acquiring-percent__img"><img src="img/img1.png" alt=""></div>
     </div>
   </div>
-</div>
+</section>
 
 <div class="instruction bg-grey">
   <div class="container">
@@ -363,7 +472,8 @@
         <input type="text" name="phone" placeholder="+7 (___) ___- ___ - __" required></label>
 
       <div class="agreement">
-        <p>Ввод номера телеофна подтверждает ваше согласие на <a href="#" class="links-inline text-decoration">обработку персональных данных</a></p>
+        <p>Ввод номера телеофна подтверждает ваше согласие на <a href="#" class="links-inline text-decoration">обработку
+          персональных данных</a></p>
       </div>
 
       <div class="btn-group">
@@ -377,7 +487,9 @@
 <div class="overlay"></div>
 
 <script src="js/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+        integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/common.js"></script>
 
 </body>
