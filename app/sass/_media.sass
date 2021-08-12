@@ -41,6 +41,26 @@
   .acquiring-terminal
     padding: 30px 30px 0
 
+  .home-two .home-img
+    max-width: 540px
+    &:before
+      width: 540px
+      height: 380px
+
+  .tariffs-box
+    max-width: 360px
+    &__head
+      padding: 20px
+      h3
+        font-size: 20px
+    &__body
+      padding: 20px 30px
+
+  .tariffs-price
+    font-size: 22px
+
+
+
 @media only screen and (max-width: 1200px)
   .home-content
     max-width: 360px
@@ -101,6 +121,34 @@
 
   .stage-connection:before
     width: 140px
+
+  .home-two
+    padding: 0
+    .home-img
+      max-width: 480px
+      margin: 0
+      &:before
+        width: 480px
+    .home-content
+      margin: 30px 0
+      max-width: 460px
+
+  .slick-prev
+    left: 0
+
+  .slick-next
+    right: 0
+
+  .tariffs-box__sum
+    font-size: 18px
+
+
+
+  .tariffs-box__list
+    line-height: 130%
+    span
+      font-size: 12px
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
@@ -197,10 +245,36 @@
   .panel_heading
     padding: 20px
 
+  .home-two
+    .home-img
+      max-width: 380px
+      &:before
+        height: 300px
+        width: 320px
+
+  h1
+    font-size: 26px
+    margin: 0 0 20px
+
+  .tariffs-box
+    max-width: 300px
+    margin: 0 auto 30px
+    height: 1160px
+
+  .new-business-box
+    margin: 0 90px 40px 0
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 870px)
   .col-3
     width: 50%
+
+  .home-two .home-img
+    margin: 20px auto 0
+    max-width: 430px
+
+  .home-two .home-content
+    max-width: none
 
 @media only screen and (max-width: 768px)
   .box-text
@@ -227,6 +301,12 @@
       font-size: 20px
     .btn
       margin: 30px auto 0
+
+  .new-business
+    justify-content: space-around
+
+  .new-business-box
+    margin: 0 0 40px
 
 
 /* Extra Small Devices, Phones */
@@ -311,6 +391,20 @@
     &:after
       transform: rotate(135deg)
 
+@media only screen and (max-width: 640px)
+  .tariffs-box
+    height: auto
+
+  .tariffs-box__list
+    li
+      min-height: auto
+    .tariffs-box__list-one
+      min-height: auto
+
+  .tariffs
+    padding: 40px 0
+
+
 @media only screen and (max-width: 576px)
   .stage-connection
     width: 100%
@@ -337,6 +431,13 @@
       max-width: none
       height: 50px
       margin: 20px 0 0
+
+  .tariffs-bottom
+    flex-direction: column
+    align-items: flex-start
+
+  .links-doc
+    margin: 0 0 10px
 
 @media only screen and (max-width: 480px)
   .advantages-box__icon

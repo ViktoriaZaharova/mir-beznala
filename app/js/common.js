@@ -57,3 +57,23 @@ $(function () {
     });
 });
 //end
+
+$('.tariffs-slider').slick({
+    slidesToShow: 3,
+    prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow-left.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-right.svg" alt=""></button>',
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
+});
